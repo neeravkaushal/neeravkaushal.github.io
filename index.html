@@ -3,109 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neerav Kaushal</title>
+    <title>Professional GitHub Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #e9f5e9; /* Light green background */
+            padding: 0;
+            background-color: #f8f3ed;
+            color: #4b3832;
         }
         header {
-            background-color: #4CAF50; /* Dark green */
+            background-color: #8e6e53;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-            padding: 15px 0;
-            text-align: center;
         }
         nav {
+            background-color: #4b3832;
+            padding: 10px;
             display: flex;
             justify-content: center;
-            background-color: #66bb6a; /* Medium green */
         }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-        nav ul li a {
+        nav a {
             color: white;
+            margin: 0 15px;
             text-decoration: none;
-            font-size: 18px;
             font-weight: bold;
         }
-        nav ul li a:hover {
+        nav a:hover {
             text-decoration: underline;
         }
-        main {
+        .container {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: 30px;
+            padding: 20px;
         }
         .profile-picture {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-bottom: 20px;
-            border: 4px solid #4CAF50;
+            flex: 1;
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
         }
-        h1 {
-            color: #388E3C; /* Darker green */
+        .content {
+            flex: 3;
         }
-        .contact-info {
-            background-color: #A5D6A7; /* Soft green */
-            padding: 15px;
+        .about-me {
+            background-color: #d1a684;
+            padding: 20px;
             border-radius: 5px;
-            margin: 20px 0;
-            text-align: center;
-        }
-        .contact-info p {
-            margin: 5px 0;
-            font-size: 18px;
-        }
-        footer {
-            background-color: #388E3C;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>Neerav Kaushal</h1>
+        <h1>Welcome to My Professional Profile</h1>
     </header>
-
     <nav>
-        <ul>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="#about">About Me</a>
+        <a href="#publications">Publications</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#contact">Contact</a>
     </nav>
-
-    <main>
-        <img src="profile-picture.jpg" alt="Neerav Kaushal Profile Picture" class="profile-picture">
-        <div class="contact-info">
-            <p><strong>Email:</strong> neerav.kaushal@example.com</p>
-            <p><strong>Phone:</strong> +1 234-567-890</p>
+    <div class="container">
+        <img src="profile-pic.jpg" alt="Profile Picture" class="profile-picture">
+        <div class="content">
+            <section id="about" class="about-me">
+                <h2>About Me</h2>
+                <p>Welcome to my professional profile page. I am a Deep Learning Scientist with expertise in NLP and drug discovery. My work involves...</p>
+            </section>
         </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Neerav Kaushal</p>
-    </footer>
-
+    </div>
 </body>
 </html>
-
